@@ -1,0 +1,190 @@
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Descarga la base de datos de ejemplo de veterinaria.">
+
+    <title>Base de datos | Veterinaria</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            min-height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 30px 20px;
+            background: #0d1117;
+            color: #e6edf3;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        .container {
+            width: 100%;
+            max-width: 720px;
+        }
+
+        .eyebrow {
+            margin-bottom: 12px;
+            color: #58a6ff;
+            font-size: 13px;
+            font-weight: bold;
+            letter-spacing: 2px;
+            text-transform: uppercase;
+        }
+
+        h1 {
+            margin-bottom: 15px;
+            font-size: 38px;
+        }
+
+        .intro {
+            margin-bottom: 30px;
+            color: #8b949e;
+            font-size: 16px;
+            line-height: 1.6;
+        }
+
+        .file-card {
+            display: flex;
+            align-items: center;
+            gap: 18px;
+            padding: 24px;
+            background: #161b22;
+            border: 1px solid #30363d;
+            border-radius: 14px;
+        }
+
+        .file-icon {
+            width: 54px;
+            height: 54px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-shrink: 0;
+            background: #1f3b2d;
+            color: #56d364;
+            border-radius: 12px;
+            font-size: 18px;
+            font-weight: bold;
+        }
+
+        .file-name {
+            margin-bottom: 6px;
+            font-size: 17px;
+            font-weight: bold;
+        }
+
+        .file-description {
+            color: #8b949e;
+            font-size: 14px;
+        }
+
+        .download-button {
+            display: inline-block;
+            margin-top: 22px;
+            padding: 13px 20px;
+            background: #238636;
+            color: white;
+            border-radius: 8px;
+            font-size: 15px;
+            font-weight: bold;
+            text-decoration: none;
+            transition: background 0.2s, transform 0.2s;
+        }
+
+        .download-button:hover {
+            background: #2ea043;
+            transform: translateY(-2px);
+        }
+
+        .note {
+            margin-top: 18px;
+            color: #8b949e;
+            font-size: 13px;
+            line-height: 1.5;
+        }
+
+        footer {
+            margin-top: 42px;
+            padding-top: 18px;
+            border-top: 1px solid #30363d;
+            color: #8b949e;
+            font-size: 13px;
+        }
+
+        @media (max-width: 560px) {
+            h1 {
+                font-size: 30px;
+            }
+
+            .file-card {
+                align-items: flex-start;
+            }
+
+            .download-button {
+                display: block;
+                text-align: center;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <main class="container">
+
+        <p class="eyebrow">Recursos de análisis de datos</p>
+
+        <h1>Base de datos de veterinaria</h1>
+
+        <p class="intro">
+            Descarga el archivo Excel de práctica y úsalo
+            para explorar, limpiar y analizar información
+            de un negocio veterinario.
+        </p>
+
+        <section class="file-card">
+
+            <div class="file-icon">
+                XLSX
+            </div>
+
+            <div>
+                <p class="file-name">
+                    datosveterinaria2.xlsx
+                </p>
+
+                <p class="file-description">
+                    Libro de Excel · Base de datos de ejemplo
+                </p>
+            </div>
+
+        </section>
+
+        <a
+            class="download-button"
+            href="datosveterinaria2.xlsx"
+            download>
+            Descargar base de datos
+        </a>
+
+        <p class="note">
+            Archivo disponible para descarga gratuita.
+        </p>
+
+        <footer>
+            Material de práctica · Análisis de datos
+        </footer>
+
+    </main>
+
+</body>
+</html>
