@@ -4,10 +4,12 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Descarga la base de datos de ejemplo de veterinaria.">
 
-    <title>Base de datos | Veterinaria</title>
-    <link rel="icon" type="image/svg+xml" href="favicon.svg">
+    <meta name="description" content="Biblioteca gratuita de bases de datos de práctica para aprender Excel, SQL, Power BI y análisis de datos.">
+
+    <title>Biblioteca de datos | Mau Duarte</title>
+
+    <link rel="icon" type="image/svg+xml" href="favicon.svg?v=2">
 
     <style>
         * {
@@ -19,9 +21,7 @@
         body {
             min-height: 100vh;
             display: flex;
-            justify-content: center;
-            align-items: center;
-            padding: 30px 20px;
+            flex-direction: column;
             background: #0d1117;
             color: #e6edf3;
             font-family: Arial, Helvetica, sans-serif;
@@ -29,11 +29,13 @@
 
         .container {
             width: 100%;
-            max-width: 720px;
+            max-width: 850px;
+            margin: auto;
+            padding: 70px 25px;
         }
 
         .eyebrow {
-            margin-bottom: 12px;
+            margin-bottom: 15px;
             color: #58a6ff;
             font-size: 13px;
             font-weight: bold;
@@ -42,30 +44,42 @@
         }
 
         h1 {
-            margin-bottom: 15px;
-            font-size: 38px;
+            margin-bottom: 18px;
+            font-size: clamp(32px, 5vw, 46px);
+            letter-spacing: -1.5px;
         }
 
         .intro {
-            margin-bottom: 30px;
+            max-width: 680px;
+            margin-bottom: 45px;
             color: #8b949e;
-            font-size: 16px;
-            line-height: 1.6;
+            font-size: 17px;
+            line-height: 1.7;
+        }
+
+        .section-title {
+            margin-bottom: 18px;
+            font-size: 19px;
         }
 
         .file-card {
             display: flex;
             align-items: center;
             gap: 18px;
-            padding: 24px;
+            padding: 25px;
             background: #161b22;
             border: 1px solid #30363d;
             border-radius: 14px;
+            transition: border-color 0.2s;
+        }
+
+        .file-card:hover {
+            border-color: #58a6ff;
         }
 
         .file-icon {
-            width: 54px;
-            height: 54px;
+            width: 55px;
+            height: 55px;
             display: flex;
             align-items: center;
             justify-content: center;
@@ -73,12 +87,17 @@
             background: #1f3b2d;
             color: #56d364;
             border-radius: 12px;
-            font-size: 18px;
+            font-size: 17px;
             font-weight: bold;
         }
 
+        .file-info {
+            flex: 1;
+            min-width: 0;
+        }
+
         .file-name {
-            margin-bottom: 6px;
+            margin-bottom: 7px;
             font-size: 17px;
             font-weight: bold;
         }
@@ -86,6 +105,7 @@
         .file-description {
             color: #8b949e;
             font-size: 14px;
+            line-height: 1.5;
         }
 
         .download-button {
@@ -95,7 +115,7 @@
             background: #238636;
             color: white;
             border-radius: 8px;
-            font-size: 15px;
+            font-size: 14px;
             font-weight: bold;
             text-decoration: none;
             transition: background 0.2s, transform 0.2s;
@@ -107,23 +127,34 @@
         }
 
         .note {
-            margin-top: 18px;
+            margin-top: 15px;
             color: #8b949e;
             font-size: 13px;
-            line-height: 1.5;
         }
 
         footer {
-            margin-top: 42px;
-            padding-top: 18px;
+            padding: 25px 20px;
             border-top: 1px solid #30363d;
+            text-align: center;
             color: #8b949e;
             font-size: 13px;
+            line-height: 1.8;
         }
 
-        @media (max-width: 560px) {
-            h1 {
-                font-size: 30px;
+        footer a {
+            color: #58a6ff;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        footer a:hover {
+            color: #79c0ff;
+            text-decoration: underline;
+        }
+
+        @media (max-width: 600px) {
+            .container {
+                padding: 55px 20px;
             }
 
             .file-card {
@@ -142,15 +173,19 @@
 
     <main class="container">
 
-        <p class="eyebrow">Recursos de análisis de datos</p>
+        <p class="eyebrow">Recursos gratuitos</p>
 
-        <h1>Base de datos de veterinaria</h1>
+        <h1>Biblioteca de datos</h1>
 
         <p class="intro">
-            Descarga el archivo Excel de práctica y úsalo
-            para explorar, limpiar y analizar información
-            de un negocio veterinario.
+            Encuentra y descarga bases de datos de práctica
+            para desarrollar tus habilidades en análisis de datos.
+            Utiliza estos recursos para aprender, experimentar
+            y crear proyectos con herramientas como Excel,
+            Power BI, SQL y Python.
         </p>
+
+        <h2 class="section-title">Bases de datos disponibles</h2>
 
         <section class="file-card">
 
@@ -158,14 +193,17 @@
                 XLSX
             </div>
 
-            <div>
+            <div class="file-info">
+
                 <p class="file-name">
-                    Datosveterinaria.xlsx
+                    Base de datos de veterinaria
                 </p>
 
                 <p class="file-description">
-                    Libro de Excel · Base de datos de ejemplo
+                    Excel · Datos de ejemplo para ejercicios
+                    de análisis y visualización.
                 </p>
+
             </div>
 
         </section>
@@ -174,18 +212,33 @@
             class="download-button"
             href="Datosveterinaria.xlsx"
             download>
-            Descargar base de datos
+            ↓ Descargar base de datos
         </a>
 
         <p class="note">
-            Archivo disponible para descarga gratuita.
+            Recurso gratuito para fines educativos y de práctica.
         </p>
 
-        <footer>
-            Material de práctica · Análisis de datos
-        </footer>
-
     </main>
+
+    <footer>
+
+        <p>
+            Recursos de aprendizaje y análisis de datos.
+        </p>
+
+        <p>
+            Creado por
+            <a
+                href="https://www.youtube.com/@mau.duarte"
+                target="_blank"
+                rel="noopener noreferrer">
+                Mau Duarte
+            </a>
+            · YouTube
+        </p>
+
+    </footer>
 
 </body>
 </html>
