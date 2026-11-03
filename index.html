@@ -51,7 +51,7 @@
 
         .intro {
             max-width: 680px;
-            margin-bottom: 45px;
+            margin-bottom: 35px;
             color: #8b949e;
             font-size: 17px;
             line-height: 1.7;
@@ -60,6 +60,11 @@
         .section-title {
             margin-bottom: 18px;
             font-size: 19px;
+        }
+
+        .database-list {
+            display: grid;
+            gap: 18px;
         }
 
         .file-card {
@@ -110,7 +115,7 @@
 
         .download-button {
             display: inline-block;
-            margin-top: 22px;
+            margin-top: 15px;
             padding: 13px 20px;
             background: #238636;
             color: white;
@@ -127,9 +132,27 @@
         }
 
         .note {
-            margin-top: 15px;
+            margin-top: 25px;
             color: #8b949e;
             font-size: 13px;
+            line-height: 1.6;
+        }
+
+        .legal-notice {
+            margin-top: 35px;
+            padding: 20px;
+            background: #211416;
+            border: 1px solid #6e3038;
+            border-radius: 10px;
+            color: #ff7b72;
+            font-size: 13px;
+            line-height: 1.7;
+        }
+
+        .legal-notice strong {
+            display: block;
+            margin-bottom: 8px;
+            font-size: 14px;
         }
 
         footer {
@@ -159,6 +182,13 @@
 
             .file-card {
                 align-items: flex-start;
+                padding: 20px;
+            }
+
+            .file-icon {
+                width: 48px;
+                height: 48px;
+                font-size: 14px;
             }
 
             .download-button {
@@ -187,37 +217,131 @@
 
         <h2 class="section-title">Bases de datos disponibles</h2>
 
-        <section class="file-card">
+        <section class="database-list">
 
-            <div class="file-icon">
-                XLSX
-            </div>
+            <!-- Base de datos de veterinaria -->
+            <article class="file-card">
 
-            <div class="file-info">
+                <div class="file-icon">XLSX</div>
 
-                <p class="file-name">
-                    Base de datos de veterinaria
-                </p>
+                <div class="file-info">
 
-                <p class="file-description">
-                    Excel · Datos de ejemplo para ejercicios
-                    de análisis y visualización.
-                </p>
+                    <p class="file-name">
+                        Base de datos de veterinaria
+                    </p>
 
-            </div>
+                    <p class="file-description">
+                        Excel · Datos de ejemplo para ejercicios
+                        de análisis, gestión y visualización.
+                    </p>
+
+                    <a
+                        class="download-button"
+                        href="./Datosveterinaria.xlsx"
+                        download>
+                        Descargar base de datos
+                    </a>
+
+                </div>
+
+            </article>
+
+            <!-- Base de datos de ventas -->
+            <article class="file-card">
+
+                <div class="file-icon">XLSX</div>
+
+                <div class="file-info">
+
+                    <p class="file-name">
+                        Base de datos de ventas
+                    </p>
+
+                    <p class="file-description">
+                        Excel · Información comercial ficticia
+                        para practicar análisis de ventas,
+                        clientes, productos y rendimiento.
+                    </p>
+
+                    <a
+                        class="download-button"
+                        href="./Ventas_Almacen.xlsx"
+                        download>
+                        Descargar base de datos
+                    </a>
+
+                </div>
+
+            </article>
+
+            <!-- Base de datos de inventario -->
+            <article class="file-card">
+
+                <div class="file-icon">XLSX</div>
+
+                <div class="file-info">
+
+                    <p class="file-name">
+                        Base de datos de inventario de ferretería
+                    </p>
+
+                    <p class="file-description">
+                        Excel · Datos de ejemplo para practicar
+                        control de inventarios, referencias,
+                        existencias y análisis de productos.
+                    </p>
+
+                    <a
+                        class="download-button"
+                        href="./inventario_ferreteria.xlsx"
+                        download>
+                        Descargar base de datos
+                    </a>
+
+                </div>
+
+            </article>
 
         </section>
 
-        <a
-            class="download-button"
-            href="Datosveterinaria.xlsx"
-            download>
-            Descargar base de datos
-        </a>
-
         <p class="note">
-            Recurso gratuito para fines educativos y de práctica.
+            Recursos gratuitos para fines educativos y de práctica.
         </p>
+
+        <!-- Aviso legal -->
+        <aside class="legal-notice">
+
+            <strong>Importante: aviso sobre el uso de los datos</strong>
+
+            Todas las bases de datos disponibles en esta página
+            fueron creadas con datos ficticios y se proporcionan
+            exclusivamente con fines educativos, de práctica
+            y experimentación.
+
+            Los nombres, empresas, clientes, productos, cifras,
+            transacciones y demás registros son inventados o
+            utilizados de manera ilustrativa. Cualquier parecido
+            con personas, empresas o situaciones reales es
+            mera coincidencia.
+
+            Estos archivos no representan información comercial,
+            financiera, operativa ni personal de empresas o
+            personas reales. No deben utilizarse para tomar
+            decisiones comerciales, financieras, legales
+            u operativas.
+
+            Los archivos se ofrecen gratuitamente y sin garantía
+            de exactitud, integridad, disponibilidad o idoneidad
+            para un propósito específico. El usuario es responsable
+            de verificar su contenido antes de utilizarlos.
+
+            El uso, modificación o distribución de estos archivos
+            es responsabilidad de quien los descarga. El creador
+            de esta biblioteca no se hace responsable por los
+            daños o perjuicios derivados de su utilización,
+            en la medida permitida por la legislación aplicable.
+
+        </aside>
 
     </main>
 
